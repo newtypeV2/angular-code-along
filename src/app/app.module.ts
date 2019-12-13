@@ -1,16 +1,20 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { FavoriteDirective } from './favorite.directive';
+import { MediaItemComponent } from './media-item.component';
 import { NgModule } from '@angular/core';
-
+import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
   imports: [
     BrowserModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  declarations: [
+    AppComponent,
+    MediaItemComponent,
+    FavoriteDirective
+  ],
+  bootstrap: [
+    AppComponent
+  ]
 })
-export class AppModule { }
+export class AppModule {}
